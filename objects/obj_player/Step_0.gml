@@ -9,9 +9,12 @@ hSpd = _move *walkSpd;
 
 vSpd = vSpd+grav;
 
+//Jumps
 if(place_meeting(x,y+1,obj_wall)) && (keyJump){
 		vSpd = -7;
+		
 }
+
 
 //horizontal collision
 if(place_meeting(x+hSpd, y, obj_wall)){
@@ -33,3 +36,24 @@ if(place_meeting(x, y+vSpd, obj_wall)){
 	vSpd=0;
 }
 y= y+vSpd;
+
+
+//Animation
+//jumping 
+if(keyJump){
+	sprite_index = spr_player_jump;
+	image_speed = 0;
+	if(sign(vSpd) >0 )image_index = 1; else image_index = 0;
+}
+else{
+	image_speed = 1;
+	if(hSpd == 0){
+		sprite_index = spr_player_idle;	
+	}
+	else{
+		sprite_index = spr_player_run;
+	}
+}
+
+//flip direction to char movement 
+if(hSpd != 0) image_xscale = sign(hSpd);
