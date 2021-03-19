@@ -84,8 +84,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7683ab0f-e016-4472-9069-542c1dc29079","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Decor",
+    "path": "folders/Sprites/Decor.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_chan",
