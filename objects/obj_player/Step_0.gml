@@ -11,7 +11,10 @@ vSpd = vSpd+grav;
 
 //Jumps
 if(place_meeting(x,y+1,obj_wall)) && (keyJump){
-		vSpd = -7;
+		vSpd = -8;
+		sprite_index = spr_player_jump;
+		image_speed = 0;
+		if(sign(vSpd) >0 )image_index = 1; else image_index = 0;
 		
 }
 
@@ -40,19 +43,19 @@ y= y+vSpd;
 
 //Animation
 //jumping 
-if(keyJump){
-	sprite_index = spr_player_jump;
-	image_speed = 0;
-	if(sign(vSpd) >0 )image_index = 1; else image_index = 0;
+
+image_speed = 1;
+if(hSpd == 0){
+	sprite_index = spr_player_idle;	
 }
 else{
-	image_speed = 1;
-	if(hSpd == 0){
-		sprite_index = spr_player_idle;	
-	}
-	else{
-		sprite_index = spr_player_run;
-	}
+	sprite_index = spr_player_run;
+}
+if(!place_meeting(x,y+1,obj_wall)) && (keyJump){
+		sprite_index = spr_player_jump;
+		image_speed = 0;
+		if(sign(vSpd) >0 )image_index = 1; else image_index = 0;
+		
 }
 
 //flip direction to char movement 
