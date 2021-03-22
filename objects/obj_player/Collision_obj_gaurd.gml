@@ -1,0 +1,1 @@
+state = player_state_dead;
