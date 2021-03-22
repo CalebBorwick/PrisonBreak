@@ -1,5 +1,4 @@
 {
-  "name": "ts_floor",
   "spriteId": {
     "name": "spr_floors",
     "path": "sprites/spr_floors/spr_floors.yy",
@@ -322,6 +321,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "ts_floor",
   "tags": [],
   "resourceType": "GMTileSet",
 }
