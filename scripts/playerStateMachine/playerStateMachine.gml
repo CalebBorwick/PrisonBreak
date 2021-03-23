@@ -34,7 +34,7 @@ function player_state_jump(){
 	}
 	
 	var _col = script_execute(player_Collision);
-	if(keyRopeAttach){
+	if(hasRope == true) &&(keyRopeAttach){
 		grappleX = mouse_x;
 		grappleY = mouse_y;
 		ropeX = x;
