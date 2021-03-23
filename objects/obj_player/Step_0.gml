@@ -17,7 +17,7 @@ else{
 
 
 
-if(y > 775){
+if(y > 730){
 	script_execute(transition, TRANS_MODE.GOTO, room);
 }
 

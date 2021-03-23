@@ -4,7 +4,7 @@
     "path": "sprites/spr_trigger/spr_trigger.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
