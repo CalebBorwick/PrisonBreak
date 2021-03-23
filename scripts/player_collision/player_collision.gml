@@ -8,6 +8,10 @@ function player_Collision(){
 	if (tilemap_get_at_pixel(collisionMap, x +hSpd, y)){
 		hSpd=0;
 		_collision = true
+		if(state = player_state_swing){
+			ropeAngle = point_direction(grappleX, grappleY, x, y);
+			ropeAngleVelocity = 0;
+		}
 	}
 	
 	//horizontal movement commit
@@ -18,6 +22,10 @@ function player_Collision(){
 
 		vSpd = 0;
 		_collision = true
+		if(state = player_state_swing){
+			ropeAngle = point_direction(grappleX, grappleY, x, y);
+			ropeAngleVelocity = 0;
+		}
 	}
 	
 	//vertical movement commit
