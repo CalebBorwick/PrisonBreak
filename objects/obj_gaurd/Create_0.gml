@@ -5,16 +5,14 @@ collisionMap = layer_tilemap_get_id(layer_get_id("col"));
 state = gaurd_walk;
 
 time_passed = 0;
-wait_duration = 2;
+wait_duration = 60;
 wait = 0;
 
 xTo = xstart;
 yTo = ystart;
 dir = 0;
 
-time_passed = 0;
-wait_duration = 60;
-wait = 0;
+
 state_target = state;
 state_previous = state;
 state_wait = 0;
