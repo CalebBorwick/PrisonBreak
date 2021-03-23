@@ -21,6 +21,7 @@ if(y > 775){
 	script_execute(transition, TRANS_MODE.GOTO, room);
 }
 
+
 	
 script_execute(state);
 
