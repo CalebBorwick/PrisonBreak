@@ -32,7 +32,7 @@
  }
 
 function gaurd_attack(){
-	sprite_index = spr_gaurd_attack;
+	sprite_index = spr_attack;
 	image_xscale = -sign(target.x);
 	if(image_index <5 ){
 		state = enemy_wait;
