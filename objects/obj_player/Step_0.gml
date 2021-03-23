@@ -1,8 +1,11 @@
 if(hascontrol){
-	keyJump = keyboard_check(vk_space) || keyboard_check(ord("W"));
+	keyJump = keyboard_check(vk_space);
+	keyUp = keyboard_check(ord("W"));
 	keyDown = keyboard_check(vk_down) || keyboard_check(ord("S"));
 	keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 	keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	keyRopeAttach = mouse_check_button(mb_left);
+	keyRopeDetach = mouse_check_button(mb_right);
 }
 else{
 	
@@ -13,7 +16,11 @@ else{
 }
 
 
-script_execute(state);
+
+if(y > 775){
+	script_execute(transition, TRANS_MODE.GOTO, room);
+}
 
 	
+script_execute(state);
 
