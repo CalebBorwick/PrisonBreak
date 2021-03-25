@@ -34,7 +34,7 @@ function player_state_jump(){
 	}
 	
 	var _col = script_execute(player_Collision);
-	if(hasRope == true) &&(keyRopeAttach){
+	if(hasRope == true) &&(mouse_check_button_pressed(mb_left)){
 		grappleX = mouse_x;
 		grappleY = mouse_y;
 		ropeX = x;
@@ -96,7 +96,8 @@ function player_state_swing(){
 		vSpd = ropeY-y;
 		var col = script_execute(player_Collision)
 		
-		if(keyRopeDetach) || (col){
+		if(mouse_check_button_released(mb_left)) || (col){
+			vSpd = -4;
 			state = player_state_jump;
 			
 		}
