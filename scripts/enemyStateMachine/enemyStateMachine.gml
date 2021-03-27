@@ -29,22 +29,26 @@
 	
 	}
 
+
  }
 
 function gaurd_attack(){
-	sprite_index = spr_attack;
 	image_xscale = -sign(target.x);
-	if(image_index <5 ){
+	sprite_index = spr_attack;
+	//sound here
+	if(image_index >5){
+		image_speed = 0;
+		state_target = gaurd_walk;
+		state_wait_duration = 15;
 		state = enemy_wait;
 	}
 
 }
 
 function enemy_wait(){
-	if(++state_wait >= state_wait_duration){
 
-		sprite_index = spr_idle;
-		state_wait = 12;
+	if(++state_wait >= state_wait_duration){
+		state_wait = 0;
 		state = state_target;
 	}
 
