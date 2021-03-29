@@ -33,6 +33,7 @@ function player_state_jump(){
 		if(sign(vSpd) >0 )image_index = 1; else image_index = 0;
 	}
 	
+	
 	var _col = script_execute(player_Collision);
 	if(hasRope == true) &&(mouse_check_button_pressed(mb_left)){
 		grappleX = mouse_x;
@@ -103,3 +104,5 @@ function player_state_swing(){
 		}
 		
 }
+
+//https://www.youtube.com/watch?v=nLM73maQnXY&list=PL9FzW-m48fn1s2icdCJBLEhMLPp4sa74q&index=3
