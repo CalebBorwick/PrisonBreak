@@ -23,6 +23,7 @@ vSpd= 0;
 grav = 0.3;
 enemy_speed=2;
 enemy_wander_distance = 100;
+enemy_attack_radius = 100;
 
 //Enemy Sprites
 spr_move = spr_gaurd_walk;
