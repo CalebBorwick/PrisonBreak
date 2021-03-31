@@ -35,14 +35,13 @@
 function gaurd_attack(){
 	image_xscale = -sign(target.x);
 	sprite_index = spr_attack;
-	//sound here
+	audio_play_sound(attack,5,false);
 	if(image_index >5){
 		image_speed = 0;
 		state_target = gaurd_walk;
 		state_wait_duration = 15;
 		state = enemy_wait;
 	}
-
 }
 
 function enemy_wait(){

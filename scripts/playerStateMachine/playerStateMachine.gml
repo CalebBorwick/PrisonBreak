@@ -26,6 +26,7 @@ function player_state_jump(){
 		sprite_index = spriteJump
 		//Jumps
 		if(vSpd==0){
+			audio_play_sound(jump,5,false);
 			vSpd = -8;
 
 		}
@@ -36,6 +37,7 @@ function player_state_jump(){
 	
 	var _col = script_execute(player_Collision);
 	if(hasRope == true) &&(mouse_check_button_pressed(mb_left)){
+		audio_play_sound(swing,5,false);
 		grappleX = mouse_x;
 		grappleY = mouse_y;
 		ropeX = x;
@@ -55,8 +57,8 @@ function player_state_dead(){
 	vSpd = grav+3;
 	var _col = script_execute(player_Collision)
 
-	
 		if(sprite_index != spriteDead){
+			audio_play_sound(death,5,false);
 			sprite_index = spriteDead;
 			image_index = 0;
 			image_speed = 0.2;
