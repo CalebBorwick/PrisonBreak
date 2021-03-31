@@ -5,6 +5,7 @@ with(obj_player){
 		unlock = true;
 	}
 }
+
 if (unlock){
 	image_speed = 1;
 	if(image_index > 8){

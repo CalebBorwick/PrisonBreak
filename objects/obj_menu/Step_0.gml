@@ -7,14 +7,17 @@ keyEnter = keyboard_check_pressed(vk_enter);
 //controls 
 if(menu_control){
 	if(keyUp){
+		audio_play_sound(navi,5,false);
 		menu_cursor ++;
 		if(menu_cursor >= menu_items) menu_cursor =0;
 	}
 	if(keyDown){
+		audio_play_sound(navi,5,false);
 		menu_cursor --;
 		if(menu_cursor < 0) menu_cursor =menu_items-1;
 	}
 	if(keyEnter){
+		audio_play_sound(enter,5,false);
 		menuXTarg = gui_width+200;
 		menu_committed = menu_cursor;
 		menu_control = false;

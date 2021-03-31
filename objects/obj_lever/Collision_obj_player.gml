@@ -1,6 +1,6 @@
 
 var unlock = true;
-
+//audio_play_sound(lever,5,false);
 
 if (unlock){
 	image_speed = 1;

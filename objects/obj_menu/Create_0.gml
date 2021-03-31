@@ -22,3 +22,5 @@ menu[0] = "Quit";
 
 menu_cursor = 2;
 menu_items = array_length_1d(menu);
+
+audio_play_sound(menusound,5,false);
