@@ -50,6 +50,10 @@ function player_state_jump(){
 		ropeLength = point_distance(grappleX, grappleY,x,y);
 		state = player_state_swing;
 	}
+	if(mouse_check_button_pressed(mb_right))&& (potionNum>0){
+		state= player_state_throw;	
+	}
+	
 	if(vSpd ==0){
 		state = player_state_free;
 	}
@@ -75,8 +79,7 @@ function player_state_dead(){
 				if (sprite_index == spriteDead){
 					image_speed =0;
 					image_index = image_number -1;
-					x= xstart;
-					y=ystart;
+					room_restart();
 					state= player_state_free;
 			
 				}
@@ -145,3 +148,4 @@ function player_state_throw(){
 
 
 }
+function player_state_locked(){}
