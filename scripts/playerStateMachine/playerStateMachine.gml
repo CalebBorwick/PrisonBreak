@@ -14,6 +14,9 @@ function player_state_free(){
 	if(keyJump){
 		state = player_state_jump;	
 	}
+	if(mouse_check_button_pressed(mb_right))&& (potionNum>0){
+		state= player_state_throw;	
+	}
 	
 }
 
@@ -107,4 +110,38 @@ function player_state_swing(){
 		
 }
 
-//https://www.youtube.com/watch?v=nLM73maQnXY&list=PL9FzW-m48fn1s2icdCJBLEhMLPp4sa74q&index=3
+function player_state_chaser_dead(){
+	hSpd = 0;
+	vSpd = grav+3;
+	var _col = script_execute(player_Collision)
+
+		if(sprite_index != spriteDead){
+			audio_play_sound(death,5,false);
+			sprite_index = spriteDead;
+			image_index = 0;
+			image_speed = 0.2;
+		
+		}
+		if(image_index==3) image_speed =0;
+		if(_col){
+			image_speed = 1;
+
+			if(image_index + image_speed > image_number){
+				if (sprite_index == spriteDead){
+					image_speed =0;
+					image_index = image_number -1;
+					room_restart();
+			
+				}
+			}
+		}
+	
+	
+}
+	
+function player_state_throw(){
+	instance_create_depth(x,y,-100, obj_potion_throwable);
+	state= player_state_free;
+
+
+}
