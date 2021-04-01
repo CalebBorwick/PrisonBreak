@@ -1,4 +1,4 @@
 image_speed = 0;
 image_index =0;
-unlock = false;
+key_unlock = false;
 checkSound = false;

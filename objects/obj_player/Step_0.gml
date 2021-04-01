@@ -5,7 +5,7 @@ if(hascontrol){
 	keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
 	keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
 	keyRopeAttach = mouse_check_button(mb_left);
-	keyRopeDetach = mouse_check_button(mb_right);
+	keyThrow = mouse_check_button(mb_right);
 }
 else{
 	

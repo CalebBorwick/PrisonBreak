@@ -12,7 +12,7 @@ xTo = xstart;
 yTo = ystart;
 dir = 0;
 
-
+attackCheck= false;
 state_target = state;
 state_previous = state;
 state_wait = 0;
@@ -25,9 +25,14 @@ enemy_speed=2;
 enemy_wander_distance = 100;
 enemy_attack_radius = 100;
 
+ledgeCheck = true;
+grounded = true;
+
 //Enemy Sprites
 spr_move = spr_gaurd_walk;
 spr_attack = spr_gaurd_attack;
-spr_idle = spr_gaurd_idle
+spr_idle = spr_gaurd_idle;
+spr_die = spr_gaurd_died;
+
 
 target = obj_player;

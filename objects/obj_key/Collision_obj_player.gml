@@ -1,5 +1,5 @@
 with(obj_player){
-	hasKey = true;
+	keyNum ++;
 	audio_play_sound(keys, 5, false);
 	instance_destroy(other);
 }
