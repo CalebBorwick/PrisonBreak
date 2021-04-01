@@ -1,7 +1,7 @@
 if (key_unlock){
 	image_speed = 1;
 	if(checkSound){
-		audio_play_sound(keys,5,false); // insert door sound
+		audio_play_sound(doorOpen,5,false); // insert door sound
 	}
 	checkSound= false;
 	if(image_index > 10){

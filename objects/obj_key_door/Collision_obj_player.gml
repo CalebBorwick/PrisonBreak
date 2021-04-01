@@ -4,6 +4,8 @@ with(obj_player){
 			keyNum--;
 		}
 		other.key_unlock = true;
+	
 	}
 }
+
 
