@@ -1,0 +1,1 @@
+state= chaser_attack;
