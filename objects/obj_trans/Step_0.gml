@@ -21,9 +21,9 @@ if(mode != TRANS_MODE.OFF){
 			}
 			case TRANS_MODE.GOTO:{
 				with(obj_player){
-					hasKey = false;
-					hasHeadlamp = false;
+					keyNum = 0 ;
 					hasRope = false;
+					potionNum = 0;
 				}
 				mode = TRANS_MODE.INTRO;
 				room_goto(target);

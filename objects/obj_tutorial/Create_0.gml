@@ -1,0 +1,2 @@
+roomCheck = false;
+strMess = "";
