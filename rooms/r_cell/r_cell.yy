@@ -18,7 +18,6 @@
         {"properties":[
             {"propertyId":{"name":"","path":"",},"objectId":{"name":"obj_level_end","path":"objects/obj_level_end/obj_level_end.yy",},"value":"r_cell_block","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"obj_level_end","path":"objects/obj_level_end/obj_level_end.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1248.0,"y":544.0,"resourceVersion":"1.0","name":"inst_75BB4155","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"obj_rope","path":"objects/obj_rope/obj_rope.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":296.0,"y":669.0,"resourceVersion":"1.0","name":"inst_2A74D24F","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_tutorial","path":"objects/obj_tutorial/obj_tutorial.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":672.0,"y":352.0,"resourceVersion":"1.0","name":"inst_721C2E0F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -118,7 +117,6 @@
     {"name":"inst_143FDF6E","path":"rooms/r_cell/r_cell.yy",},
     {"name":"inst_46210749","path":"rooms/r_cell/r_cell.yy",},
     {"name":"inst_75BB4155","path":"rooms/r_cell/r_cell.yy",},
-    {"name":"inst_2A74D24F","path":"rooms/r_cell/r_cell.yy",},
     {"name":"inst_20866802","path":"rooms/r_cell/r_cell.yy",},
     {"name":"inst_6B704916","path":"rooms/r_cell/r_cell.yy",},
     {"name":"inst_36F8A460","path":"rooms/r_cell/r_cell.yy",},
