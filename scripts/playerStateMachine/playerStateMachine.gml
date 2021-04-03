@@ -14,6 +14,17 @@ function player_state_free(){
 	if(keyJump){
 		state = player_state_jump;	
 	}
+	if(hasRope == true) &&(mouse_check_button_pressed(mb_left)){
+		audio_play_sound(swing,5,false);
+		grappleX = mouse_x;
+		grappleY = mouse_y;
+		ropeX = x;
+		ropeY = y;
+		ropeAngleVelocity  = 0;
+		ropeAngle = point_direction(grappleX,grappleY,x,y);
+		ropeLength = point_distance(grappleX, grappleY,x,y);
+		state = player_state_swing;
+	}
 	if(mouse_check_button_pressed(mb_right))&& (potionNum>0){
 		state= player_state_throw;	
 	}
@@ -53,7 +64,7 @@ function player_state_jump(){
 	if(mouse_check_button_pressed(mb_right))&& (potionNum>0){
 		state= player_state_throw;	
 	}
-	
+
 	if(vSpd ==0){
 		state = player_state_free;
 	}
