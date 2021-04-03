@@ -48,6 +48,7 @@
     {"id":{"name":"enter","path":"sounds/enter/enter.yy",},"order":2,},
     {"id":{"name":"spr_mountain_background","path":"sprites/spr_mountain_background/spr_mountain_background.yy",},"order":1,},
     {"id":{"name":"spr_lava","path":"sprites/spr_lava/spr_lava.yy",},"order":2,},
+    {"id":{"name":"r_level1","path":"rooms/r_level1/r_level1.yy",},"order":7,},
     {"id":{"name":"spr_floors","path":"sprites/spr_floors/spr_floors.yy",},"order":0,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":5,},
     {"id":{"name":"f_menu","path":"fonts/f_menu/f_menu.yy",},"order":0,},
@@ -106,6 +107,7 @@
     {"roomId":{"name":"r_keys","path":"rooms/r_keys/r_keys.yy",},},
     {"roomId":{"name":"r_potion","path":"rooms/r_potion/r_potion.yy",},},
     {"roomId":{"name":"r_rope","path":"rooms/r_rope/r_rope.yy",},},
+    {"roomId":{"name":"r_level1","path":"rooms/r_level1/r_level1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
